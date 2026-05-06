@@ -15,7 +15,8 @@ function ProductList({ onHomeClick }) {
 
     // Initialize dispatch
     const dispatch = useDispatch();
-
+    const cartItems = useSelector(state => state.cart.items);
+    
     const plantsArray = [
         {
             category: "Air Purifying Plants",
